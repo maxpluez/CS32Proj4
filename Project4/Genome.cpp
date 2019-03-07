@@ -14,31 +14,66 @@ public:
     string name() const;
     bool extract(int position, int length, string& fragment) const;
 private:
+    string mname;
+    string msequence;
 };
 
 GenomeImpl::GenomeImpl(const string& nm, const string& sequence)
 {
-    // This compiles, but may not be correct
+    mname=nm;
+    msequence=sequence;
 }
 
 bool GenomeImpl::load(istream& genomeSource, vector<Genome>& genomes)
 {
-    return false;  // This compiles, but may not be correct
+    genomes.clear();
+    if(!genomeSource)
+        return false;  // This compiles, but may not be correct
+    char c;
+    if(!genomeSource.get(c))
+        return false;
+    if(c!='>')
+        return false;
+    string nm;
+    getline(genomeSource, nm);
+    string se;
+    string current;
+    while(getline(genomeSource, current)){
+        c = current[0];
+        if(c=='>'){
+            Genome g(nm, se);
+            genomes.push_back(g);
+            nm = current.substr(1, current.size()-1);
+            se = "";
+        } else {
+            for(int i = 0; i < current.size(); i++)
+                toupper(current[i]);
+            se+=current;
+        }
+    }
+    Genome g(nm, se);
+    genomes.push_back(g);
+    return true;
 }
 
 int GenomeImpl::length() const
 {
-    return 0;  // This compiles, but may not be correct
+    return msequence.size();
 }
 
 string GenomeImpl::name() const
 {
-    return "";  // This compiles, but may not be correct
+    return mname;
 }
 
 bool GenomeImpl::extract(int position, int length, string& fragment) const
 {
-    return false;  // This compiles, but may not be correct
+    if(position<0||length<0||position+length>msequence.size())
+        return false;
+    fragment = "";
+    for(int i = position; i < length; i++)
+        fragment+=msequence[i];
+    return true;
 }
 
 //******************** Genome functions ************************************

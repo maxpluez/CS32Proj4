@@ -93,6 +93,7 @@ void Trie<ValueType>::insertHelper(std::string key, ValueType value, Node *p){
         Node* newNode = new Node;
         newNode->data.push_back(value);
         p->children.push_back(newNode);
+        return;
     }
     for(int i = 0; i < p->children.size(); i++){
         if(ckey==p->children[i]->mkey){
