@@ -91,6 +91,19 @@ Genome::~Genome()
     delete m_impl;
 }
 
+Genome::Genome(const Genome& other)
+{
+    m_impl = new GenomeImpl(*other.m_impl);
+}
+
+Genome& Genome::operator=(const Genome& rhs)
+{
+    GenomeImpl* newImpl = new GenomeImpl(*rhs.m_impl);
+    delete m_impl;
+    m_impl = newImpl;
+    return *this;
+}
+
 bool Genome::load(istream& genomeSource, vector<Genome>& genomes)
 {
     return GenomeImpl::load(genomeSource, genomes);
@@ -110,4 +123,3 @@ bool Genome::extract(int position, int length, string& fragment) const
 {
     return m_impl->extract(position, length, fragment);
 }
-

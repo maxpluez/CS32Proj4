@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Trie.h"
 #include <vector>
+#include <map>
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -14,6 +15,10 @@ int main(int argc, const char * argv[]) {
     for(int i=0;i<v.size();i++)
         cout<<v[i]<<endl;
     delete tp;
+    
+    map<int,int> m;
+    m[1]=10;
+    
     
     std::cout << "Hello, World!\n";
     return 0;
