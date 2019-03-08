@@ -20,10 +20,9 @@ private:
     int minLength;
     Trie<pair<int,int>> mt;
     vector<Genome> gv;
-    bool comp(const GenomeMatch& g1, const GenomeMatch& g2);
 };
 
-bool GenomeMatcherImpl::comp(const GenomeMatch &g1, const GenomeMatch &g2){
+bool comp(const GenomeMatch &g1, const GenomeMatch &g2){
     if(g1.percentMatch>g2.percentMatch)
         return true;
     else if(g1.percentMatch==g2.percentMatch&&g1.genomeName<g2.genomeName)
@@ -142,7 +141,7 @@ bool GenomeMatcherImpl::findRelatedGenomes(const Genome& query, int fragmentMatc
     }
     results.clear();
     for(map<string,int>::iterator it = numOfMatches.begin(); it != numOfMatches.end(); it++){
-        int p = (it->second) / S;
+        double p = (it->second) / static_cast<double>(S);
         if(p>matchPercentThreshold){
             GenomeMatch g;
             g.genomeName = it->first;
@@ -150,8 +149,7 @@ bool GenomeMatcherImpl::findRelatedGenomes(const Genome& query, int fragmentMatc
             results.push_back(g);
         }
     }
-    //sort(results.begin(), results.end(), comp);
-    
+    sort(results.begin(), results.end(), comp);
     return true;  // This compiles, but may not be correct
 }
 
