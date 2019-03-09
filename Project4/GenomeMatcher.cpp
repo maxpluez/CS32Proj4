@@ -64,7 +64,10 @@ bool GenomeMatcherImpl::findGenomesWithThisDNA(const string& fragment, int minim
     bool used = false;
     string currents;
     for(int i = 0; i < v.size(); i++){
-        if(!gv[v[i].first].extract(v[i].second, fragment.size(), currents))
+        int l1 = gv[v[i].first].length()-v[i].second;
+        int l2 = fragment.size();
+        int length = l1<l2? l1:l2;
+        if(!gv[v[i].first].extract(v[i].second, length, currents))
             continue;
         int j;
         for(j = 0; j < currents.size(); j++){

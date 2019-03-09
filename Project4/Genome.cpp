@@ -38,16 +38,28 @@ bool GenomeImpl::load(istream& genomeSource, vector<Genome>& genomes)
     getline(genomeSource, nm);
     string se;
     string current;
+    bool rightAfterName = false;
     while(getline(genomeSource, current)){
+        if(current.size()==0)
+            return false;
         c = current[0];
         if(c=='>'){
+            if(current.size()==1)
+                return false;
+            if(rightAfterName)
+                return false;
             Genome g(nm, se);
             genomes.push_back(g);
             nm = current.substr(1, current.size()-1);
             se = "";
+            rightAfterName = true;
         } else {
-            for(int i = 0; i < current.size(); i++)
+            rightAfterName=false;
+            for(int i = 0; i < current.size(); i++){
                 toupper(current[i]);
+                if(current[i]!='A'&&current[i]!='C'&&current[i]!='T'&&current[i]!='G'&&current[i]!='N')
+                   return false;
+            }
             se+=current;
         }
     }
