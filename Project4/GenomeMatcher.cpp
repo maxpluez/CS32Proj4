@@ -67,8 +67,11 @@ bool GenomeMatcherImpl::findGenomesWithThisDNA(const string& fragment, int minim
         int l1 = gv[v[i].first].length()-v[i].second;
         int l2 = fragment.size();
         int length = l1<l2? l1:l2;
+        //if(length<minimumLength)
+            //continue;
         if(!gv[v[i].first].extract(v[i].second, length, currents))
             continue;
+        //cerr<<currents<<endl;
         int j;
         for(j = 0; j < currents.size(); j++){
             if(fragment[j]==currents[j])
@@ -79,6 +82,7 @@ bool GenomeMatcherImpl::findGenomesWithThisDNA(const string& fragment, int minim
                 used = true;
                 continue;
             }
+            used = false;
             break;
         }
         if(j>=minimumLength){
@@ -144,7 +148,7 @@ bool GenomeMatcherImpl::findRelatedGenomes(const Genome& query, int fragmentMatc
     }
     results.clear();
     for(map<string,int>::iterator it = numOfMatches.begin(); it != numOfMatches.end(); it++){
-        double p = (it->second) / static_cast<double>(S);
+        double p = (it->second) / static_cast<double>(S) * 100;
         if(p>matchPercentThreshold){
             GenomeMatch g;
             g.genomeName = it->first;

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Trie.h"
+#include "provided.h"
 #include <vector>
 #include <map>
 using namespace std;
@@ -32,6 +33,18 @@ int main(int argc, const char * argv[]) {
     map<int,int> m;
     m[1]=10;
     
+    
+    GenomeMatcher g(3);
+    Genome g1("Genome 1", "CGGTGTACNACGACTGGGGATAGAATATCTTGACGTCGTACCGGTTGTAGTCGTTCGACCGAAGGGTTCCGCGCCAGTAC");
+    Genome g2("Genome 2", "TAACAGAGCGGTNATATTGTTACGAATCACGTGCGAGACTTAGAGCCAGAATATGAAGTAGTGATTCAGCAACCAAGCGG");
+    Genome g3("Genome 3", "TTTTGAGCCAGCGACGCGGCTTGCTTAACGAAGCGGAAGAGTAGGTTGGACACATTNGGCGGCACAGCGCTTTTGAGCCA");
+    g.addGenome(g1);
+    g.addGenome(g2);
+    g.addGenome(g3);
+    
+    std::vector<DNAMatch> matches;
+    bool result;
+    result    =    g.findGenomesWithThisDNA("GAAG",    5,    true,    matches);
     
     std::cout << "Hello, World!\n";
     return 0;

@@ -82,9 +82,7 @@ bool GenomeImpl::extract(int position, int length, string& fragment) const
 {
     if(position<0||length<0||position+length>msequence.size())
         return false;
-    fragment = "";
-    for(int i = position; i < length; i++)
-        fragment+=msequence[i];
+    fragment = msequence.substr(position, length);
     return true;
 }
 
