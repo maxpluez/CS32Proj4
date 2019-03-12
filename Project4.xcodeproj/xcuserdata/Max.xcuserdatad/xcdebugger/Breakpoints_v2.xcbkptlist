@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/main.cpp"
-            timestampString = "573886699.984107"
+            timestampString = "574053163.272507"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "main(int argc, const char * argv[])"
-            landmarkType = "9">
+            startingLineNumber = "349"
+            endingLineNumber = "349"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/main.cpp"
-            timestampString = "573886699.984629"
+            timestampString = "574053163.2731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "main(int argc, const char * argv[])"
-            landmarkType = "9">
+            startingLineNumber = "367"
+            endingLineNumber = "367"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.98492"
+            timestampString = "574053734.1216069"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "find(const std::string &amp;key, bool exactMatchOnly)"
             landmarkType = "9">
             <Locations>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.984978"
+            timestampString = "574053734.122116"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "find(const std::string &amp;key, bool exactMatchOnly)"
             landmarkType = "9">
             <Locations>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985021"
+            timestampString = "574053734.12261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "find(const std::string &amp;key, bool exactMatchOnly)"
             landmarkType = "9">
             <Locations>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985064"
+            timestampString = "574053734.123183"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "find(const std::string &amp;key, bool exactMatchOnly)"
             landmarkType = "9">
             <Locations>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985108"
+            timestampString = "574053734.123863"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "find(const std::string &amp;key, bool exactMatchOnly)"
             landmarkType = "9">
             <Locations>
@@ -282,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985149"
+            timestampString = "574053734.124313"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "find(const std::string &amp;key, bool exactMatchOnly)"
             landmarkType = "9">
             <Locations>
@@ -330,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985191"
+            timestampString = "574053734.124862"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
          </BreakpointContent>
@@ -346,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985232"
+            timestampString = "574053734.125284"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -394,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985272"
+            timestampString = "574053734.125762"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -442,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985312"
+            timestampString = "574053734.126152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -490,11 +490,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985353"
+            timestampString = "574053734.126644"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -538,11 +538,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985394"
+            timestampString = "574053734.127085"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -586,11 +586,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.9854341"
+            timestampString = "574053734.1275181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -634,11 +634,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.9854749"
+            timestampString = "574053734.127951"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -682,11 +682,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985514"
+            timestampString = "574053734.128474"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -730,11 +730,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985554"
+            timestampString = "574053734.128955"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -778,11 +778,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985594"
+            timestampString = "574053734.129333"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -826,11 +826,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985634"
+            timestampString = "574053734.129861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -874,11 +874,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985675"
+            timestampString = "574053734.130537"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -922,11 +922,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985714"
+            timestampString = "574053734.131187"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -970,11 +970,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985755"
+            timestampString = "574053734.13255"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -1018,11 +1018,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.9857939"
+            timestampString = "574053734.1331379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -1066,11 +1066,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985832"
+            timestampString = "574053734.133469"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -1114,11 +1114,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985872"
+            timestampString = "574053734.133755"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -1162,11 +1162,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985912"
+            timestampString = "574053734.134115"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -1210,11 +1210,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985952"
+            timestampString = "574053734.134733"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -1258,11 +1258,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.985993"
+            timestampString = "574053734.13518"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1274,11 +1274,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.986033"
+            timestampString = "574053734.1354851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -1322,11 +1322,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.986073"
+            timestampString = "574053734.135778"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -1370,11 +1370,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.986113"
+            timestampString = "574053734.136178"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -1418,11 +1418,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.9861521"
+            timestampString = "574053734.136845"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -1466,11 +1466,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.9861929"
+            timestampString = "574053734.137211"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -1514,11 +1514,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.986233"
+            timestampString = "574053734.137722"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
             <Locations>
@@ -1562,11 +1562,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.9862731"
+            timestampString = "574053734.138119"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "findHelper(std::string key, bool exactMatchOnly, std::vector&lt;ValueType&gt; &amp;result, Node* p, bool used)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1578,13 +1578,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/main.cpp"
-            timestampString = "573886699.986316"
+            timestampString = "574053163.2747819"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "main(int argc, const char * argv[])"
-            landmarkType = "9">
+            startingLineNumber = "343"
+            endingLineNumber = "343"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1594,11 +1594,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.986625"
+            timestampString = "574053734.138472"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "insertHelper(std::string key, ValueType value, Node *p)"
             landmarkType = "9">
             <Locations>
@@ -1642,11 +1642,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.986675"
+            timestampString = "574053734.138781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "insertHelper(std::string key, ValueType value, Node *p)"
             landmarkType = "9">
             <Locations>
@@ -1690,11 +1690,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.986717"
+            timestampString = "574053734.139127"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "insertHelper(std::string key, ValueType value, Node *p)"
             landmarkType = "9">
             <Locations>
@@ -1738,11 +1738,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Trie.h"
-            timestampString = "573886699.9867589"
+            timestampString = "574053734.139411"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "insertHelper(std::string key, ValueType value, Node *p)"
             landmarkType = "9">
             <Locations>
@@ -1786,7 +1786,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/GenomeMatcher.cpp"
-            timestampString = "573886699.986805"
+            timestampString = "574053734.139684"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -1802,7 +1802,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/GenomeMatcher.cpp"
-            timestampString = "573886699.986859"
+            timestampString = "574053734.139731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -1818,7 +1818,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/GenomeMatcher.cpp"
-            timestampString = "573886699.986909"
+            timestampString = "574053734.139771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -1834,7 +1834,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/Genome.cpp"
-            timestampString = "573886699.986959"
+            timestampString = "574053734.139811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
@@ -1850,13 +1850,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/main.cpp"
-            timestampString = "573886699.987005"
+            timestampString = "574053163.275346"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "main(int argc, const char * argv[])"
-            landmarkType = "9">
+            startingLineNumber = "366"
+            endingLineNumber = "366"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1866,7 +1866,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project4/GenomeMatcher.cpp"
-            timestampString = "573886699.987314"
+            timestampString = "574053734.1398931"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"

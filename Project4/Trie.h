@@ -37,41 +37,25 @@ Trie<ValueType>::Trie(){
 template<typename ValueType>
 Trie<ValueType>::~Trie(){
     destroy(root);
-    delete root;
 }
 
 template<typename ValueType>
 void Trie<ValueType>::destroy(Node* p){
-    if(p->children.size()==0)
+    if(p->children.size()==0){
+        delete p;
         return;
+    }
     Node* current;
-    /*
-    for(int i = 0; i < p->children.size(); i++){
-        if(p->children[i]->children.size()==0){
-            delete p->children[i];
-            p->children.erase(p->children.begin()+i);
-        }
-        else
-            destroy(p->children[i]);
-    }
-     */
-    auto it = p->children.begin();
-    while(it != p->children.end()){
+    for(auto it = p->children.begin();it != p->children.end();it++){
         current = *it;
-        if(current->children.size()==0){
-            delete current;
-            it = p->children.erase(it);
-        } else {
-            destroy(current);
-            it++;
-        }
+        destroy(current);
     }
+    delete p;
 }
 
 template<typename ValueType>
 void Trie<ValueType>::reset(){
     destroy(root);
-    delete root;
     root = new Node;
 }
 

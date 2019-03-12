@@ -86,10 +86,6 @@ bool GenomeMatcherImpl::findGenomesWithThisDNA(const string& fragment, int minim
             break;
         }
         if(j>=minimumLength){
-            DNAMatch d;
-            d.genomeName = gv[v[i].first].name();
-            d.length = j;
-            d.position = v[i].second;
             bool flag = false;
             for(int k = 0; k < matches.size(); k++){
                 if(matches[k].genomeName==gv[v[i].first].name()){
@@ -98,13 +94,19 @@ bool GenomeMatcherImpl::findGenomesWithThisDNA(const string& fragment, int minim
                         break;
                     } else {
                         flag = true;
-                        matches[k] = d;
+                        matches[k].length = j;
+                        matches[k].position = v[i].second;
                         break;
                     }
                 }
             }
-            if(!flag)
+            if(!flag){
+                DNAMatch d;
+                d.genomeName = gv[v[i].first].name();
+                d.length = j;
+                d.position = v[i].second;
                 matches.push_back(d);
+            }
         }
     }
     if(matches.size()==0)
