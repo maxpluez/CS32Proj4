@@ -22,6 +22,7 @@ private:
     vector<Genome> gv;
 };
 
+//self-defined compare function for sorting
 bool comp(const GenomeMatch &g1, const GenomeMatch &g2){
     if(g1.percentMatch>g2.percentMatch)
         return true;
@@ -43,7 +44,7 @@ void GenomeMatcherImpl::addGenome(const Genome& genome)
     string current;
     for(int i = 0; i <= genome.length() - minLength; i++){
         if(genome.extract(i, minLength, current))
-            mt.insert(current, pair<int,int>(gv.size()-1,i));
+            mt.insert(current, pair<int,int>(gv.size()-1,i)); //store the index of each genome in the genome vector and the substring's starting position
     }
 }
 
@@ -60,19 +61,20 @@ bool GenomeMatcherImpl::findGenomesWithThisDNA(const string& fragment, int minim
         return false;
     
     matches.clear();
-    vector<pair<int,int>> v = mt.find(fragment.substr(0,minimumSearchLength()),exactMatchOnly);
-    bool used = false;
+    vector<pair<int,int>> v = mt.find(fragment.substr(0,minimumSearchLength()),exactMatchOnly); //potentials
+    bool used = false; //bool determining of the chance of being snip is used
     string currents;
-    for(int i = 0; i < v.size(); i++){
+    for(int i = 0; i < v.size(); i++){ //check each potential matches
         int l1 = gv[v[i].first].length()-v[i].second;
         int l2 = fragment.size();
         int length = l1<l2? l1:l2;
         //if(length<minimumLength)
             //continue;
+        
+        //extract the sequence of potential matches with the length = the length of the fragment. (longest possible matching substring)
         if(!gv[v[i].first].extract(v[i].second, length, currents))
             continue;
-        //cerr<<currents<<endl;
-        int j;
+        int j; //represent how many characters are matched, considering snip when necessary
         for(j = 0; j < currents.size(); j++){
             if(fragment[j]==currents[j])
                 continue;
@@ -85,6 +87,8 @@ bool GenomeMatcherImpl::findGenomesWithThisDNA(const string& fragment, int minim
             used = false;
             break;
         }
+        
+        //if j is large enough, put it in
         if(j>=minimumLength){
             bool flag = false;
             for(int k = 0; k < matches.size(); k++){
@@ -134,12 +138,14 @@ bool GenomeMatcherImpl::findGenomesWithThisDNA(const string& fragment, int minim
 
 bool GenomeMatcherImpl::findRelatedGenomes(const Genome& query, int fragmentMatchLength, bool exactMatchOnly, double matchPercentThreshold, vector<GenomeMatch>& results) const
 {
+    if(matchPercentThreshold<0||matchPercentThreshold>100)
+        return false;
     if(query.length()<fragmentMatchLength)
         return false;
     int S = query.length()/fragmentMatchLength;
     string currentSubQuery;
-    vector<DNAMatch> v;
-    map<string, int> numOfMatches;
+    vector<DNAMatch> v; //matches
+    map<string, int> numOfMatches; //a temp result, count how many matches and see if minimum precent threshold is reached
     for(int i = 0; i < S; i++){
         query.extract(i*fragmentMatchLength, fragmentMatchLength, currentSubQuery);
         if(findGenomesWithThisDNA(currentSubQuery, fragmentMatchLength, exactMatchOnly, v)){
@@ -158,8 +164,10 @@ bool GenomeMatcherImpl::findRelatedGenomes(const Genome& query, int fragmentMatc
             results.push_back(g);
         }
     }
+    if(results.size()==0)
+        return false;
     sort(results.begin(), results.end(), comp);
-    return true;  // This compiles, but may not be correct
+    return true;
 }
 
 //******************** GenomeMatcher functions ********************************

@@ -28,22 +28,24 @@ bool GenomeImpl::load(istream& genomeSource, vector<Genome>& genomes)
 {
     genomes.clear();
     if(!genomeSource)
-        return false;  // This compiles, but may not be correct
+        return false;
     char c;
     if(!genomeSource.get(c))
         return false;
+    
+    //if first line is not proper name
     if(c!='>')
         return false;
-    string nm;
+    string nm; //name
     getline(genomeSource, nm);
-    string se;
-    string current;
+    string se; //sequence
+    string current; //each line
     bool rightAfterName = false;
     while(getline(genomeSource, current)){
         if(current.size()==0)
             return false;
         c = current[0];
-        if(c=='>'){
+        if(c=='>'){ //if it's name line
             if(current.size()==1)
                 return false;
             if(rightAfterName)
